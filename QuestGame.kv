@@ -1,0 +1,39 @@
+BoxLayoutExample
+
+<BoxLayoutExample>:
+    background_color: 1, 1, 1, 1
+    orientation: "vertical"
+    Label:
+        text: "Игра-викторина для самых умных"
+        pos_hint: {"center_x": 0.5}
+        size_hint: 1, None
+        height: "30dp"
+    Label:
+        text: root.qText
+        pos_hint: {"center_x": 0.5}
+        size_hint: 1, 2
+        font_size: "20dp"
+    GridLayout:
+        rows: 2
+        cols: 2
+        Button:
+            text: root.qVar1
+            on_press: root.onButtonClick(0)
+            disabled: root.buttonsDisabled
+        Button:
+            text: root.qVar2
+            on_press: root.onButtonClick(1)
+            disabled: root.buttonsDisabled
+        Button:
+            text: root.qVar3
+            on_press: root.onButtonClick(2)
+            disabled: root.buttonsDisabled
+        Button:
+            text: root.qVar4
+            on_press: root.onButtonClick(3)
+            disabled: root.buttonsDisabled
+    Label:
+        text: root.statusText
+        pos_hint: {"center_x": 0.5}
+        size_hint: 1, None
+        height: "50dp"
