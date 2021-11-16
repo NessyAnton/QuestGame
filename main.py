@@ -6,6 +6,7 @@ from kivy.properties import StringProperty, NumericProperty, BooleanProperty
 from kivy.uix.boxlayout import BoxLayout
 
 
+
 class BoxLayoutExample(BoxLayout):
     qText = StringProperty("Кто изобрел кубик Рубика?")
     qVar1 = StringProperty("Китайцы")
